@@ -17,18 +17,18 @@ class MovieFactorryTest {
         Movie movie = MovieFactorry.createMovie(
                 "Inception",
                 "Christopher Nolan",
-                2010,
+                "2010",
                 "Sci-Fi",
-                8.8,
+                "8.8",
                 "http://example.com/poster.jpg"
         );
 
         assertNotNull(movie);
         assertEquals("Inception", movie.getTitle());
         assertEquals("Christopher Nolan", movie.getDirector());
-        assertEquals(2010, movie.getReleaseYear());
+        assertEquals("2010", movie.getReleaseYear());
         assertEquals("Sci-Fi", movie.getGenre());
-        assertEquals(8.8, movie.getUserRating());
+        assertEquals("8.8", movie.getUserRating());
         assertEquals("http://example.com/poster.jpg", movie.getPosterUrl());
     }
 }
